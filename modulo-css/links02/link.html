@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        Seletores personalizados
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = clidren
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold
+        }
+        a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        a:active{
+            color: blue;
+        }
+        a::before{
+            content: '[ link ]';
+            color: pink;
+        }
+        a::after{
+            content: ' [ link ] ';
+            text-decoration: none;
+            font-weight: normal;
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Instagram</a></li>
+    </ul>
+</body>
+</html>

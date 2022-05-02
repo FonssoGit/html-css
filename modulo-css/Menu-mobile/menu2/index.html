@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            color: white;
+        }
+        .icon-menu{
+            opacity: 0;
+            
+        }
+        .item{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .item a{
+            color: black;
+            padding: 20px;
+            
+        }
+        .open{
+            transition: 2s;
+            opacity: 1;
+            display: block;  
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>logo</h1>
+        </div>
+        <img src="/barra-de-menu.svg" class="icon" onclick="clique()">
+    </header>
+    
+        <div class="icon-menu">
+                <div class="item">
+                    <a href="">Home</a>
+                    <a href="">Contato</a>
+                    <a href="">Redes</a>
+                </div>
+        </div>
+
+    <script> 
+        function clique(){
+            var menu = document.querySelector('.icon-menu')
+            if(menu.classList.contains('open')){
+                menu.classList.remove('open')
+                document.querySelector('.icon').src = '/barra-de-menu.svg'
+            }
+            else{
+                menu.classList.add('open')
+                document.querySelector('.icon').src = '/fechar.svg'
+            }
+}
+    </script>
+</body>
+</html>

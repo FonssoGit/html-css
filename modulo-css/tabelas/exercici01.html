@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            font-size: 3em;
+            background-image: linear-gradient(to bottom, rgb(173, 218, 255), pink );
+            padding: 10px;
+            color: white;
+        }
+        table{
+            border-collapse: separate;
+            text-align: center;
+            margin: auto;
+        }
+        td{
+            border: 1px solid black;
+            padding: 20px;
+        }
+        .mulheres{
+            background-color: pink;
+            font-family: fantasy;
+        }
+        .homens{
+            background-color: lightblue;
+            font-weight: bolder ;
+            font-weight: normal;
+        }
+        .grupo{
+            background-image: linear-gradient(to bottom, rgb(173, 218, 255), pink );
+        }
+        .nomes{
+            background-image: linear-gradient(to bottom, rgb(173, 218, 255), pink );
+        }
+        .filmes{
+            background-image: linear-gradient(to bottom, rgb(173, 218, 255), pink );
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Tabela</h1>
+    <table>
+        <tr>
+            <td class="grupo">Grupo</td>
+            <td class="nomes" colspan="2">Nomes</td>
+            <td class="filmes" colspan="3">Filmes</td>
+        </tr>
+        <tr class="mulheres">
+            <td rowspan="3">Mulheres</td>
+            <td colspan="2">Ana Maria Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vigadores</td>
+        </tr>
+        <tr class="mulheres">
+            <td  colspan="2">Beatriz Souza</td>
+            <td>Hulck</td>
+            <td>Iception</td>
+            <td>Batman</td>
+        </tr>
+        <tr class="mulheres">
+            <td colspan="2">Caludia</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Big-Hero</td>
+        </tr>
+        <tr class="homens">
+            <td rowspan="3">Homens</td>
+            <td colspan="2">Bruno Mendonça</td>
+            <td>Intocáveis</td>
+            <td>Amnésia</td>
+            <td>Gladiador</td>
+        </tr>
+        <tr class="homens">
+            <td colspan="2">Daniel Lourenço</td>
+            <td>Wall-E</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+        </tr>
+        <tr class="homens">
+            <td colspan="2">Fabiano Mota</td>
+            <td>Star-Wars 5</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
+        </tr>
+    </table>
+</body>
+</html>

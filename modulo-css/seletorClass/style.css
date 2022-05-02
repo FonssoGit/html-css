@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/*
+em HML=id i CSS=#
+em HTML=class CSS=.
+*/
+body{
+    background-color: rebeccapurple;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: red;
+}
+.principal{
+    background-color: white;
+    text-align: center;
+}

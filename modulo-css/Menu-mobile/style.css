@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+header{
+    background-color: black;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: #f1f1f1;
+    transition: 2s;
+}
+.nav-desktop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 6rem;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    align-items: center;
+}
+.nav-intem{
+    margin:0 10px;
+}
+.nav-link{
+    color: #f1f1f1;
+    font-weight: 400;
+    font-size: 1.15rem
+}
+.login-button a{
+    padding: 30px;
+}
+.login-button button{
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+.mobile-menu-icon{
+    display: none;
+}
+.menu-mobile{
+    display: none;
+}
+.icon{
+    transition: 2s;
+}
+@media screen and (max-width:730px) {
+    .nav-list{
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .open{
+        display: block;
+    
+    }
+    .nav-link a{
+        color: black;
+    }
+    .nav-intem{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .menu-mobile{
+        height: 300px;
+    }
+    .login-button-icon button{
+        display: block;
+        background-color: #f1f1f1;
+        border: none;
+        padding: 10px;
+        width: 200px;
+        border-radius: 30px;
+        margin: auto;
+    }
+
+}

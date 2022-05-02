@@ -1,0 +1,15 @@
+.container{
+    width: 800px;
+    border: 1px solid black;
+    display: flex;
+    overflow: auto;
+}
+.items{
+    display: flex;
+    padding: 100px;
+    background-color: darkgray;
+    margin: 10px;
+}
+.container::-webkit-scrollbar{
+    width: 0;
+}
